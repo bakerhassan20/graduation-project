@@ -72,7 +72,7 @@
         <div class="col-xl-12">
             <div class="card mg-b-20">
                 <div class="card-header pb-0">
-                    @can('اضافة فاتورة')
+                    @can('اضافة اوردر')
                         <a href="invoices/create" class="modal-effect btn btn-sm btn-primary" style="color:white"><i
                                 class="fas fa-plus"></i>&nbsp; اضافة فاتورة</a>
                     @endcan
@@ -142,17 +142,17 @@
                                                     class="btn ripple btn-primary btn-sm" data-toggle="dropdown"
                                                     type="button">العمليات<i class="fas fa-caret-down ml-1"></i></button>
                                                 <div class="dropdown-menu tx-13">
-                                                    @can('تعديل الفاتورة')
+                                                    @can('تعديل اوردر')
                                                         <a class="dropdown-item"
                                                             href=" {{ url('edit_invoice') }}/{{ $invoice->id }}">تعديل
                                                             الفاتورة</a>
                                                     @endcan
 
-                                                    @can('حذف الفاتورة')
+                                                    @can('حذف اوردر')
                                                         <a class="dropdown-item" href="#" data-invoice_id="{{ $invoice->id }}"
                                                             data-toggle="modal" data-target="#delete_invoice"><i
                                                                 class="text-danger fas fa-trash-alt"></i>&nbsp;&nbsp;حذف
-                                                            الفاتورة</a>
+                                                            اوردر</a>
                                                     @endcan
 
                                                     @can('تغير حالة الدفع')
@@ -164,14 +164,14 @@
                                                             الدفع</a>
                                                     @endcan
 
-                                                    @can('ارشفة الفاتورة')
+                                                    @can('ارشفة اوردر')
                                                         <a class="dropdown-item" href="#" data-invoice_id="{{ $invoice->id }}"
                                                             data-toggle="modal" data-target="#Transfer_invoice"><i
                                                                 class="text-warning fas fa-exchange-alt"></i>&nbsp;&nbsp;نقل الي
                                                             الارشيف</a>
                                                     @endcan
 
-                                                    @can('طباعةالفاتورة')
+                                                    @can('طباعةاوردر')
                                                         <a class="dropdown-item" href="Print_invoice/{{ $invoice->id }}"><i
                                                                 class="text-success fas fa-print"></i>&nbsp;&nbsp;طباعة
                                                             الفاتورة

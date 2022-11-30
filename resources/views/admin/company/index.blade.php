@@ -32,7 +32,7 @@
 		<div class="card mg-b-20">
 			<div class="card-header pb-0 col-xl-2 col-ms-2">
 				<div class="d-flex justify-content-between">
-                @can('اضافة منتج')
+                @can('اضافة خدمه')
 					<a class="modal-effect btn btn-outline-primary btn-block"  href="{{ route('companys.create') }}">اضافة شركه</a>
                 @endcan
 				</div>
@@ -61,15 +61,15 @@
                             <td>{{$company->user->name}}</td>
 							<td>{{$company->section->section_name}}</td>
 						    <td>
-                                @can('تعديل منتج')
+                                @can('تعديل خدمه')
 								<a class="modal-effect btn btn-sm btn-warning"href="{{ route('companys.show',$company) }}" title="عرض"><i class="las la-eye"></i></a>
                                 @endcan
-                                @can('تعديل منتج')
+                                @can('تعديل خدمه')
 									<a class="modal-effect btn btn-sm btn-info"href="#exampleModal2"
 									title="تعديل"><i class="las la-pen"></i></a>
                                 @endcan
 
-                                @can('حذف منتج')
+                                @can('حذف خدمه')
 								    <a class="modal-effect btn btn-sm btn-danger" data-effect="effect-scale"
 								    data-company_id="{{ $company->id }}"
                                     data-name="{{ $company->name }}"data-toggle="modal"

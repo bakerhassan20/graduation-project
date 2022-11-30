@@ -71,7 +71,7 @@
 							<div class="card mg-b-20">
 								<div class="card-header pb-0 col-xl-2 col-ms-2">
 									<div class="d-flex justify-content-between">
-                                      @can('اضافة منتج')
+                                      @can('اضافة خدمه')
 										<a class="modal-effect btn btn-outline-primary btn-block" data-effect="effect-scale" data-toggle="modal" href="#modaldemo8">اضافة خدمه</a>
                                       @endcan
 									</div>
@@ -106,7 +106,7 @@
 
 
 										<td>
-                                         @can('تعديل منتج')
+                                         @can('تعديل خدمه')
 													<a class="modal-effect btn btn-sm btn-info" data-effect="effect-scale"
 													data-name="{{ $service->name }}"
 													data-serv_id="{{ $service->id }}"
@@ -115,7 +115,7 @@
 													title="تعديل"><i class="las la-pen"></i></a>
                                         @endcan
 
-                                        @can('حذف منتج')
+                                        @can('حذف خدمه')
 													<a class="modal-effect btn btn-sm btn-danger" data-effect="effect-scale"
 													data-serv_id="{{ $service->id }}"
                                                     data-name="{{ $service->name }}"data-toggle="modal"
