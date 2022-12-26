@@ -7,7 +7,7 @@ use App\Models\sections;
 use App\Models\services;
 use App\Models\CompanyServices;
 use App\Models\User;
-use App\Http\trait\ImageTrait;
+use App\Http\traits\ImageTrait;
 use Illuminate\Http\Request;
 
 class CompaniesController extends Controller

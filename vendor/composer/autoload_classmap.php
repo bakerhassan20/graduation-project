@@ -40,6 +40,7 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\trait\\ImageTrait' => $baseDir . '/app/Http/trait/ImageTrait.php',
+    'App\\Models\\ColorTheme' => $baseDir . '/app/Models/ColorTheme.php',
     'App\\Models\\Companies' => $baseDir . '/app/Models/Companies.php',
     'App\\Models\\CompanyServices' => $baseDir . '/app/Models/CompanyServices.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',

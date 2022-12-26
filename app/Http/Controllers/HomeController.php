@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\invoices;
+use App\Models\ColorTheme;
 class HomeController extends Controller
 {
     /**
@@ -94,6 +95,21 @@ class HomeController extends Controller
 
     }
 
+    function theme(Request $request){
+    $theme = ColorTheme::first();
+     if($theme->mode == 'dark'){
 
+            $theme->update([
+                'mode'=> 'light',
+            ]);
+
+        }
+        else{
+            $theme->update([
+                'mode'=> 'dark',
+            ]);
+        }
+        return response()->json(['message'=>$theme->mode]);
+        }
     }
 

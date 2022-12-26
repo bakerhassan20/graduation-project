@@ -1,11 +1,8 @@
 <?php
 
-namespace  App\Http\trait;
+namespace  App\Http\traits;
 
 
-/**
- *
- */
 trait ImageTrait
 {
     public function insertImage($title,$image,$dir){

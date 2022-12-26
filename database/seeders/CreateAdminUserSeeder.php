@@ -31,3 +31,4 @@ public function run()
         $user->assignRole([$role->id]);
     }
 }
+  

@@ -14,7 +14,10 @@
 <!--- Style css -->
 <link href="{{URL::asset('assets/css-rtl/style.css')}}" rel="stylesheet">
 <!--- Dark-mode css -->
+@if(\App\Models\ColorTheme::first()->mode == 'dark')
 <link href="{{URL::asset('assets/css-rtl/style-dark.css')}}" rel="stylesheet">
+@endif
+
 <!---Skinmodes css-->
 <link href="{{URL::asset('assets/css-rtl/skin-modes.css')}}" rel="stylesheet">
 

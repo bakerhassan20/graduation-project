@@ -22,6 +22,23 @@
             </div>
         </div>
         <div class="main-header-right">
+         <ul class="light-icone">
+
+          <div class="main-layout">
+            <a class="new nav-link theme-layout nav-link-bg layout-setting">
+            @if(\App\Models\ColorTheme::first()->mode != 'dark')
+             <span class="light-layout">
+                    <i class="bx bx-moon fa-lg"></i>
+                </span>
+            @else
+            <span class="light-layout">
+                <i class="bx bx-sun fa-lg"></i>
+            </span>
+              @endif
+            </a>
+          </div>
+      </ul>
+
             <ul class="nav">
                 <li class="">
                     <div class="dropdown  nav-itemd-none d-md-flex">
@@ -282,3 +299,4 @@
     </div>
 </div>
 <!-- /main-header -->
+
